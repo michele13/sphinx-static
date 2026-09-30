@@ -10,10 +10,9 @@ A self-contained static linked build of sphinx-doc with the following extensions
 
 Install Python with `pip` and `patchelf`
 
-1. Create a Python virtual environment
+1. Create a Python virtual environment inside this repo
 
 ```shell
-mkdir -p sphinx-static; cd sphinx-static
 python3 -m venv .venv
 ```
 
