@@ -31,8 +31,27 @@ pip install -U pyinstaller staticx
 ```
 
 
-## Building
+## Build
 
 Run the `./build.sh` script
 
 
+## Install and usage
+
+Copy `dist/sphinx` inside a directory inside your `PATH` 
+and create the following symlinks:
+
+```shell
+
+ln -s sphinx sphinx-quickstart
+ln -s sphinx sphinx-build
+ln -s sphinx sphinx-autobuild
+```
+
+you can now use the program like this
+
+```shell
+sphinx {build|quickstart|autobuild} [--help] ...
+```
+or by running directly sphinx-build, sphinx-quickstart. sphinx-autobuild 
+as you normally would in a traditional install
