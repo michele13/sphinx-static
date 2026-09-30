@@ -1,10 +1,11 @@
-#!/bin/bash
+#!/bin/sh 
+
+set -e
 
 pyinstaller --onefile --name sphinx \
   --collect-all sphinx \
   --collect-all myst_parser \
   --collect-all furo \
-  --copy-metadata rinohtype \
   --collect-all rinohtype \
   --collect-all rinoh \
   --collect-all sphinx_basic_ng \
@@ -15,3 +16,5 @@ pyinstaller --onefile --name sphinx \
   --collect-all rinoh_typeface_texgyrepagella \
   --collect-all rinoh_typeface_dejavuserif \
   launcher.py
+
+staticx dist/sphinx dist/sphinx.static
