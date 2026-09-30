@@ -53,5 +53,5 @@ you can now use the program like this
 ```shell
 sphinx {build|quickstart|autobuild} [--help] ...
 ```
-or by running directly sphinx-build, sphinx-quickstart. sphinx-autobuild 
+or by running directly `sphinx-build`, `sphinx-quickstart`. `sphinx-autobuild`  
 as you normally would in a traditional install
